@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:project_uts/calculatingage.dart';
 
 class app1 extends StatefulWidget {
   @override
@@ -13,19 +14,30 @@ class _app1State extends State<app1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.cyanAccent[200],
         title: Text("Menghitung Umur"),
       ),
       body: Center(
         child: Column(
           children: <Widget>[
-            RaisedButton(
-              child: Text(
-                "Silahkan Masukkan Tanggal Lahir Anda",
-                style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+            Image(
+              image: AssetImage('assets/images/4389-removebg-preview.png'),
+            ),
+            Text(
+              'Penghitung umur - Setiap hari, pengguna mengisi formulir pendaftaran online untuk berbagai tujuan. Misalnya, Anda akan memasukkan detail Anda secara online untuk membuat akun di situs berbagi foto.',
+              style: TextStyle(fontSize: 20.0),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: RaisedButton(
+                child: Text(
+                  "Silahkan Masukkan Tanggal Lahir Anda",
+                  style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+                ),
+                onPressed: () {
+                  f1();
+                },
               ),
-              onPressed: () {
-                f1();
-              },
             ),
             Text(
               years1 + " " + month1 + " " + days1,

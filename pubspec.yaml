@@ -50,8 +50,13 @@ flutter:
 
 
   assets:
-    - assets/images/Header.png
+    - assets/images/
     - assets/4851-calculating.json
+    - assets/3082-calculator.json
+    - assets/4130-fitness-loading-spinner.json
+    - assets/39139-duplicate.json
+    - assets/39420-calculator.json
+    - assets/39612-location-animation.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:
